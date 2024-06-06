@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Adventure Prep</title>
+		<link href="../css/style7.css" type="text/css" rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<nav>
+			<div class="heading">Adventure Prep</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="landing.html">Home</a></li>
+					<li><a href="dashboard.html">Trip Planner</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+		</nav>
+		<p id="title">
+			New Trip Plan
+		<p>
+		<form id="tripForm" onsubmit="handleSubmit(event)">
+			<div id="select">
+				<select id="checklistS">
+					<option value="1">Checklist 1</option>
+					<option value="2">Checklist 2</option>
+					<option value="3">Checklist 3</option>
+					<option value="4">Checklist 4</option>
+				</select>
+			</div>
+			<div id="formI">
+				<div id="stopsBox">
+					<label for="stop"><h2>Stops:</h2></label>
+					<button type="button" onclick="addStop()">Add Stop</button>
+					<button type="button" onclick="removeStop()">Remove Stop</button><br>
+				</div>
+				<div id="itemsBox">
+					<label for="item"><h2>Items:</h2></label>
+					<button type="button" onclick="addItem()">Add Item</button>
+					<button type="button" onclick="removeItem()">Remove Item</button><br>
+				</div>
+			</div>
+			<div id="submitB">
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+		
+		<footer>
+			<p><i>&copy; 2024 Adventure Prep<i></p>
+		</footer>
+		
+		<script src="../javascript/js1.js"></script>
+	</body>
+</html>
